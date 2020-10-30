@@ -1,0 +1,105 @@
+:root{/* variaveis para usar cores */
+    --vermelho:#E50914;
+    --preto:#141414;
+}
+
+*{                  /*Aqui estamos dando um reset em algumas configurações pre definidas pelos navegadores*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*Esta dizendo que os elementos terão que se espremer sem ultrapassar a borda da BOX*/
+}
+
+/**ELementos base*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{
+    display:flex;  /*coloca os elementos em flex box ou seija ficarão em linha por padrão o row do proximo parametro mesmo não pondo ele ja vem */
+    flex-direction: row;/*padrão do display flex*/
+    align-items: center;/*ALinha o elemento ao centro*/
+    justify-content:space-between;/*vai por um espaçamento entre a logo e os menus estão no mesmo container** a inumeros paramentros para ficar mudando os espaçamentos e os locais dos itens estudar mais depois */
+}
+
+header .logo{
+    margin-left:5px;/*margin do logo em base a margem da tela*/
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size:40px; /* Aumenta a grossura do logo */
+}
+
+header nav a{
+    text-decoration: none; /* Vai retirar as linhas de baixo dos textos */
+    color: #AAA;     /*cor das letras */
+    margin-right: 10px; /*espaçamento entre cada menu*/
+
+}
+
+header nav a:hover{/*Evento*/
+    color:#fff; /*altera a cor do menu ao passa o ponteiro */
+}
+
+/*Elementos do filme principal*/
+.filme-principal{
+    font-size:16px;
+    
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url(../img/power.jpg);  /*rgba da um efeito escurecido na imagem*/
+
+    height:400px;   /**dar o tamanho da caixa para a imagem */
+    background-size:cover;/*COloca adequa a imagem ao tamanho da caixa//cover= Area de cobertura*/
+
+    display: flex;
+    flex-direction: column; /*vai inverter para modo coluna e não horizontal*/
+    justify-content: center; /*vai por os elementos no centro */
+    align-items: flex-start; /*Alinha os elementos no inicio */
+
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom:40px; /*margin entre o botao e o texto */
+}
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none; /*borda dos botoes*/
+    color: white;
+
+    padding: 15px 30px; /*posição dos botoes*/
+    margin-right: 15px; /*espacamento entre os botoes*/
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease alli;
+}
+
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+    
+
+}
+
+
