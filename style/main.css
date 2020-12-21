@@ -3,17 +3,14 @@
     --preto:#141414;
 }
 
-*{                  /*Aqui estamos dando um reset em algumas configurações pre definidas pelos navegadores*/
-    margin:0;
-    padding:0;
-    box-sizing: border-box; /*Esta dizendo que os elementos terão que se espremer sem ultrapassar a borda da BOX*/
-}
+
 
 /**ELementos base*/
 body{
     background: var(--preto);
     font-family: 'Arial', Times, serif;
     color: white;
+    
 }
 
 header .container{
@@ -79,7 +76,7 @@ header nav a:hover{/*Evento*/
     font-size: 12px;
 
     cursor: pointer;
-    transition: .3s ease alli;
+    transition: .3s ease all;
 }
 
 
@@ -92,14 +89,26 @@ header nav a:hover{/*Evento*/
     margin-right: 8px;
 }
 
+
+
 .container{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .filme-principal .container{
-    width: 70%;
+    width: 70%;     /*Altera a posição dos textos de acordo com a abertura da tela*/
     
 
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top:5px;
 }
 
 
